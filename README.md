@@ -53,7 +53,7 @@ erDiagram
     DATETIME(6) created_at
     DATETIME(6) updated_at
   }
-  CARTS }o--|| USERS : (user_id)
+  CARTS }o--|| USERS : "user_id"
 ```
 
 ## Indexes
