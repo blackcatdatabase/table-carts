@@ -1,4 +1,4 @@
--- Auto-generated from schema-map.psd1 (map@1e83bb6)
+-- Auto-generated from schema-map.psd1 (map@6cefe8e)
 -- table: carts
 CREATE TABLE IF NOT EXISTS carts (
   id CHAR(36) PRIMARY KEY,
