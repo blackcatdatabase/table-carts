@@ -1,5 +1,6 @@
--- Auto-generated from schema-map.psd1 (map@6cefe8e)
--- table: carts
+-- Auto-generated from schema-map-mysql.psd1 (map@mtime:2025-10-24T09:13:35Z)
+-- engine: mysql
+-- table:  carts
 CREATE TABLE IF NOT EXISTS carts (
   id CHAR(36) PRIMARY KEY,
   user_id BIGINT UNSIGNED NULL,
