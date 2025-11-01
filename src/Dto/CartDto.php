@@ -12,6 +12,7 @@ final class CartDto {
     public function __construct(
         public readonly ?string $id,
         public readonly ?int $userId,
+        public readonly ?string $note,
         public readonly \DateTimeImmutable $createdAt,
         public readonly \DateTimeImmutable $updatedAt,
         public readonly int $version
