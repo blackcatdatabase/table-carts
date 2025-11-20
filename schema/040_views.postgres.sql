@@ -5,6 +5,7 @@
 CREATE OR REPLACE VIEW vw_carts AS
 SELECT
   id,
+  tenant_id,
   user_id,
   note,
   created_at,

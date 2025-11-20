@@ -4,6 +4,7 @@
 -- Contract view for [carts]
 CREATE OR REPLACE ALGORITHM=MERGE SQL SECURITY INVOKER VIEW vw_carts AS
 SELECT
+  tenant_id,
   id,
   user_id,
   note,

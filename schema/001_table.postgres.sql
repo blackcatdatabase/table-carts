@@ -3,6 +3,7 @@
 -- table:  carts
 CREATE TABLE IF NOT EXISTS carts (
   id CHAR(36) PRIMARY KEY,
+  tenant_id BIGINT NOT NULL,
   user_id BIGINT NULL,
   note VARCHAR(200) NULL,
   created_at TIMESTAMPTZ(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
