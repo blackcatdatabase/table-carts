@@ -1,8 +1,9 @@
--- Auto-generated from schema-map-postgres.psd1 (map@9d3471b)
+-- Auto-generated from schema-map-postgres.psd1 (map@62c9c93)
 -- engine: postgres
 -- table:  carts
 CREATE TABLE IF NOT EXISTS carts (
   id CHAR(36) PRIMARY KEY,
+  tenant_id BIGINT NOT NULL,
   user_id BIGINT NULL,
   note VARCHAR(200) NULL,
   created_at TIMESTAMPTZ(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
