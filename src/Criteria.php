@@ -41,11 +41,11 @@ final class Criteria extends BaseCriteria
         return [ 'id', 'note' ];
     }
 
-/** Columns allowed in ORDER BY (falls back to filterable() when empty). */
-protected function sortable(): array
-{
-    return [ 'id', 'tenant_id', 'user_id', 'note', 'created_at', 'updated_at', 'version' ];
-}
+    /** Columns allowed in ORDER BY (falls back to filterable() when empty). */
+    protected function sortable(): array
+    {
+        return [ 'id', 'tenant_id', 'user_id', 'note', 'created_at', 'updated_at', 'version' ];
+    }
 
     /**
      * Whitelist of joinable entities (for safe ->join() usage):
