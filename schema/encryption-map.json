@@ -1,0 +1,29 @@
+{
+  "tables": {
+    "carts": {
+      "columns": {
+        "created_at": {
+          "strategy": "passthrough"
+        },
+        "id": {
+          "strategy": "passthrough"
+        },
+        "note": {
+          "strategy": "passthrough"
+        },
+        "tenant_id": {
+          "strategy": "passthrough"
+        },
+        "updated_at": {
+          "strategy": "passthrough"
+        },
+        "user_id": {
+          "strategy": "passthrough"
+        },
+        "version": {
+          "strategy": "passthrough"
+        }
+      }
+    }
+  }
+}
