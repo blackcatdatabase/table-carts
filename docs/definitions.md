@@ -3,12 +3,15 @@
 Carts keyed by UUID; may be anonymous or bound to user.
 
 ## Columns
-| Column | Type | Null | Default | Description |
-| --- | --- | --- | --- | --- |
-| id | CHAR(36) | NO |  | Cart id (UUID textual). |
-| user_id | BIGINT | YES |  | User owner (FK users.id), optional. |
-| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
-| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |
+| Column | Type | Null | Default | Description | Crypto |
+| --- | --- | --- | --- | --- | --- |
+| id | CHAR(36) | NO |  | Cart id (UUID textual). |  |
+| tenant_id | BIGINT | NO |  | Owning tenant (FK tenants.id). |  |
+| user_id | BIGINT | YES |  | User owner (FK users.id), optional. |  |
+| note | VARCHAR(200) | YES |  | Optional note attached to the cart. |  |
+| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |  |
+| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |  |
+| version | mysql: INT / postgres: INTEGER | NO | 0 | Optimistic locking version counter. |  |
 
 ## Engine Details
 
